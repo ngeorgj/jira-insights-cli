@@ -1,0 +1,41 @@
+{
+  "name": "jira-assets-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool for fetching Jira Assets (Insight) data",
+  "main": "dist/index.js",
+  "bin": {
+    "jira-assets": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "cli": "node dist/index.js",
+    "lint": "eslint --ext .ts src/",
+    "test": "jest"
+  },
+  "keywords": [
+    "jira",
+    "assets",
+    "insight",
+    "cli",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "conf": "^10.2.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "eslint": "^8.52.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0"
+  }
+}
